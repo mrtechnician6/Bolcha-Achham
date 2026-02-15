@@ -1,0 +1,94 @@
+<section class="bolcha-project-container">
+    
+    <div class="brand-header">
+        <img src="1771141211008.jpg" alt="Bolcha Achham Logo" class="project-logo">
+    </div>
+
+    <div class="impact-image-container">
+        <img src="1771141211008.jpg" alt="Achham Development" class="hero-photo">
+        <div class="image-overlay">
+            <h1>अछामको विकास र सुशासनका लागि</h1>
+        </div>
+    </div>
+
+    <div class="form-wrapper">
+        <div class="report-title">
+            <h2>📢 Report Corruption | भ्रष्टाचार विरुद्ध उजुरी</h2>
+            <p>Directly to: <strong>yoshpick22@gmail.com</strong></p>
+        </div>
+
+        <form action="mailto:yoshpick22@gmail.com?subject=ALERT: New Corruption Report" method="post" enctype="text/plain" class="report-form">
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Issue Category / विषय</label>
+                    <select name="Category" required>
+                        <option value="">-- Select --</option>
+                        <option value="Infrastructure">Infrastructure (Roads/Buildings)</option>
+                        <option value="Education-Health">Education or Health Services</option>
+                        <option value="Financial-Irregularity">Financial Irregularity</option>
+                        <option value="Bribery">Bribery / घूसखोरी</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Location / स्थान (Ward/Village)</label>
+                    <input type="text" name="Location" placeholder="e.g. Mangalsen-5" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Detailed Description / विस्तृत विवरण</label>
+                <textarea name="ReportDetails" rows="5" placeholder="Please provide specific details..." required></textarea>
+            </div>
+
+            <div class="privacy-box">
+                <label class="checkbox-container">
+                    <input type="checkbox" name="AnonymousRequest" value="Yes">
+                    <strong>Keep my identity 100% Anonymous / मेरो पहिचान गोप्य राख्नुहोस्</strong>
+                </label>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Report to Bolcha Achham</button>
+        </form>
+    </div>
+
+    <div class="policy-footer">
+        <h3>⚖️ Privacy Policy for Reporters</h3>
+        <p><strong>English:</strong> Bolcha Achham is committed to whistleblower safety. Information sent to <em>yoshpick22@gmail.com</em> is encrypted and handled only by our core team. We will never share your identity with third parties.</p>
+        <hr>
+        <p><strong>नेपाली:</strong> बोल्छ अछाम सूचना दिने व्यक्तिको सुरक्षाप्रति प्रतिबद्ध छ। तपाईंको जानकारी गोप्य रहनेछ र भ्रष्टाचार विरुद्ध आवाज उठाउन मात्र प्रयोग गरिनेछ।</p>
+    </div>
+</section>
+
+<style>
+    .bolcha-project-container { max-width: 900px; margin: 20px auto; font-family: 'Arial', sans-serif; background: #fff; border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.15); overflow: hidden; }
+    
+    /* Branding */
+    .brand-header { padding: 15px 30px; background: #fff; border-bottom: 1px solid #eee; text-align: left; }
+    .project-logo { max-height: 60px; }
+
+    /* Hero Image */
+    .impact-image-container { position: relative; height: 300px; overflow: hidden; }
+    .hero-photo { width: 100%; height: 100%; object-fit: cover; }
+    .image-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,51,102,0.9)); padding: 20px 30px; color: white; }
+    .image-overlay h1 { margin: 0; font-size: 24px; }
+
+    /* Form Styles */
+    .form-wrapper { padding: 40px; }
+    .report-title h2 { color: #e63946; margin: 0; }
+    .report-title p { color: #666; margin-bottom: 30px; }
+    .form-row { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 10px; }
+    .form-group { flex: 1; min-width: 250px; margin-bottom: 20px; }
+    label { display: block; font-weight: bold; margin-bottom: 8px; color: #333; }
+    input, textarea, select { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; }
+    
+    .privacy-box { background: #fff5f5; padding: 15px; border-left: 5px solid #e63946; margin: 20px 0; border-radius: 4px; }
+    .submit-btn { background: #003366; color: white; border: none; padding: 15px 30px; width: 100%; border-radius: 6px; font-size: 18px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+    .submit-btn:hover { background: #e63946; }
+
+    /* Footer */
+    .policy-footer { background: #f8f9fa; padding: 30px; font-size: 14px; color: #444; line-height: 1.6; border-top: 1px solid #eee; }
+    .policy-footer h3 { color: #003366; margin-top: 0; }
+    hr { border: 0; border-top: 1px solid #ddd; margin: 15px 0; }
+</style>
