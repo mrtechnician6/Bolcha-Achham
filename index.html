@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolcha Achham - भ्रष्टाचार विरुद्धको आवाज</title>
+    <style>
+        :root { --primary: #003366; --accent: #e63946; --light: #f8f9fa; }
+        body { font-family: 'Arial', sans-serif; margin: 0; background-color: #f0f2f5; scroll-behavior: smooth; }
+        
+        /* Navigation Bar */
+        nav { background: var(--primary); padding: 15px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { color: white; font-size: 1.4rem; font-weight: bold; }
+        .nav-links a { color: white; text-decoration: none; font-weight: bold; margin-left: 20px; font-size: 0.9rem; text-transform: uppercase; border: 1px solid white; padding: 5px 15px; border-radius: 5px; }
+        .nav-links a:hover { background: white; color: var(--primary); }
+
+        .main-container { max-width: 900px; margin: 20px auto; background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+
+        /* Photo 1: Development Hero */
+        .dev-hero { 
+            height: 350px; 
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('dev-photo.jpg'); 
+            background-size: cover; 
+            background-position: center;
+            display: flex; align-items: center; justify-content: center; color: white; text-align: center;
+        }
+        .dev-hero h1 { font-size: 2rem; padding: 0 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+
+        /* About Section (Nav target) */
+        #about { padding: 50px; display: flex; gap: 30px; background: var(--light); align-items: center; flex-wrap: wrap; }
+        
+        /* Photo 2: Bio/About Photo */
+        .about-photo img { width: 320px; height: auto; border-radius: 12px; box-shadow: 8px 8px 0 var(--primary); }
+        .about-text { flex: 1; min-width: 300px; }
+        .about-text h2 { color: var(--primary); margin-top: 0; }
+
+        /* Reporting Form */
+        .report-section { padding: 40px; }
+        .report-header { text-align: center; margin-bottom: 30px; }
+        .report-header h2 { color: var(--accent); margin-bottom: 5px; }
+        
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-weight: bold; color: #333; }
+        input, select, textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; box-sizing: border-box; }
+
+        /* Evidence Box */
+        .evidence-box { background: #fff5f5; border: 2px dashed var(--accent); padding: 25px; border-radius: 10px; text-align: center; margin-bottom: 25px; }
+        .evidence-box p { margin: 0 0 10px 0; color: var(--accent); font-weight: bold; }
+
+        .submit-btn { background: var(--primary); color: white; border: none; padding: 18px; width: 100%; border-radius: 8px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .submit-btn:hover { background: var(--accent); transform: translateY(-2px); }
+
+        @media (max-width: 768px) { .dev-hero { height: 250px; } .about-photo img { width: 100%; } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">BOLCHA ACHHAM</div>
+        <div class="nav-links"><a href="#about">About</a></div>
+    </nav>
+
+    <div class="main-container">
+        <div class="dev-hero">
+            <h1>भ्रष्टाचार विरुद्धको आवाज:<br>अछामको विकासको नयाँ अभियान</h1>
+        </div>
+
+        <section id="about">
+            <div class="about-photo">
+                <img src="bio-photo.jpg" alt="Bolcha Achham Bio Photo">
+            </div>
+            <div class="about-text">
+                <h2>हाम्रो बारेमा (About Us)</h2>
+                <p><strong>Bolcha Achham</strong> एक गैर–राजनीतिक सामाजिक अभियान हो। हाम्रो उद्देश्य अछामको विकास, सम्भावना पहिचान र युवाको सशक्त सहभागिता हो। हामी कुनै पनि राजनीतिक दलको पक्ष वा विपक्षमा छैनौं।</p>
+                <p>हाम्रो ध्यान शिक्षा, स्वास्थ्य, रोजगारी र सुशासनमा केन्द्रित छ।</p>
+            </div>
+        </section>
+
+        <section class="report-section">
+            <div class="report-header">
+                <h2>📢 Report Corruption | उजुरी दिनुहोस्</h2>
+                <p>Submit your report directly to yoshpick22@gmail.com</p>
+            </div>
+            
+            <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST" enctype="multipart/form-data">
+                
+                <div class="form-group">
+                    <label>Location / स्थान (Ward/Village)</label>
+                    <input type="text" name="location" placeholder="उदाहरण: मंगलसेन-५" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Issue Details / घटनाको विवरण</label>
+                    <textarea name="details" rows="6" placeholder="घटनाको बारेमा विस्तृत जानकारी दिनुहोस्..." required></textarea>
+                </div>
+
+                <div class="evidence-box">
+                    <p>📁 Evidence upload option if you have (Photo/Video)</p>
+                    <input type="file" name="attachment" accept="image/*,video/*">
+                </div>
+
+                <button type="submit" class="submit-btn">Send Report to Bolcha Achham</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>
